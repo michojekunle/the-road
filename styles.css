@@ -211,6 +211,13 @@ section.popular-tours {
     position: relative;
     opacity: .9;
     z-index: 10;
+    transition: all .3s;
+}
+
+.change > .front-side {
+    box-shadow: 0 2rem 4rem #777;
+    transform: translateZ(-5rem) translateX(3rem);
+    opacity: .2;
 }
 
 .tour-name {
@@ -250,6 +257,12 @@ section.popular-tours {
     flex-direction: column;
     transform: translateZ(-5rem) translateX(3rem);
     opacity: .5;
+}
+
+.change .back-side {
+    box-shadow: 0 2rem 4rem #777;
+    transform: translateZ(0) translateX(0);
+    opacity: 1;
 }
 
 .tour-price {
