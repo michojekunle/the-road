@@ -301,4 +301,28 @@ section.popular-tours {
 
 /* End of Popular Tours */
 
+/* Stories */
+.stories {
+    padding: 10rem 0;
+}
+
+.stories-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.story-bg {
+    
+}
+
+.story-iamge {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* End of stories */
+
 
