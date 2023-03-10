@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/air-balloon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,600;0,700;0,900;1,400&display=swap" rel="stylesheet">
@@ -103,7 +104,12 @@
         <!-- End Of Popular Tours -->
         <!-- Stories --> 
         <section class="stories">
-            <div class="stories wrapper">
+            <div class="video-container">
+                <video class="bg-video" autoplay muted loop>
+                    <source src="images/video.mp4" type="video/mp4"/>
+                </video>
+            </div>
+            <div class="stories-wrapper">
                 <div class="story-bg">
                     <div class="story">
                         <img src="images/story-img-1.jpg" alt="Customer Image" class="story-image">
@@ -136,6 +142,44 @@
                 </div>
             </div>
         </section>
+
+        <!-- Contact -->
+        <section class="contact">
+            <h1 class="contact-heading">Contact Us</h1>
+            <form class="contact-form center">
+                <div class="input-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" class="contact-input" placeholder="Enter Your Name">
+                </div>
+                <div class="input-groups">
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input 
+                            type="email" 
+                            class="contact-input" 
+                            placeholder="Enter Your Email"
+                        >
+                    </div>
+                    <div class="input-group">
+                        <label for="fullname">Phone Number</label>
+                        <input 
+                            type="number" 
+                            class="contact-input" 
+                            placeholder="Enter Your Phone Number"
+                        >
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="fullname">Full Name</label>
+                    <textarea 
+                        class="form-textarea" 
+                        placeholder="Your message here... "
+                    >
+                </div>
+                <input type="submit" value="Sumbit" class="submit-btn">
+            </form>
+        </section>
+        <!-- End oF Contact -->
     </div>
     <script src="script.js"></script>
 </body>

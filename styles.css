@@ -304,6 +304,22 @@ section.popular-tours {
 /* Stories */
 .stories {
     padding: 10rem 0;
+    position: relative;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .4;
+}
+
+.bg-video {
+    width: 100%;
+    height: 100%;
+    opacity: .5;
 }
 
 .stories-wrapper {
@@ -313,16 +329,72 @@ section.popular-tours {
 }
 
 .story-bg {
-    
+    background-color: #bbb;
+    padding: 5rem;
+    margin: 5rem;
+    width: 70%;
+    box-shadow: 0 2rem 5rem rgba(51, 51, 51, 0.4);
+    transform: skew(20deg);
 }
 
-.story-iamge {
+.story {
+    transform: skew(-20deg);
+    display: flex;
+}
+
+.story-image {
     width: 20rem;
     height: 20rem;
     border-radius: 50%;
     object-fit: cover;
+    margin-right: 5rem;
+}
+
+.story-text {
+    letter-spacing: 0.1rem;
+}
+
+.story-heading {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: var(--grey-color);
+    margin-bottom: 1rem
+}
+
+.story-paragraph {
+    font-size: 1.8rem;
+    color: var(--light-grey-color);
+}
+
+.story-paragraph::first-letter {
+    margin-left: 1rem;
 }
 
 /* End of stories */
+
+/* Contact */
+.contact {
+    padding: 15rem 0 20rem 0;
+    text-align: center;
+    background: url(images/contact-us-bg.png) center no-repeat;
+}
+
+.contact-heading {
+    font-size: 7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: var(--white-color);
+    text-shadow: 0 1rem 2rem #000;
+    margin-bottom: 8rem;
+}
+
+.contact-form {
+    width: 70rem;
+    height: 50rem;
+    background-color: rgba(255, 255, 255, 0.95);
+    margin: auto;
+    flex-direction: column;
+}
+/* End Of Contact */
 
 
